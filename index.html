@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Retro Climber - Space Invasion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="retro-device">
+    <div id="screen-bezel">
+        <div id="game-wrapper">
+            <div class="crt-overlay"></div>
+            <div id="ui-layer">
+                <div class="ui-top-row">
+                    <div id="score-display">SCORE: 0</div>
+                    <div id="high-score-display">HI: 0</div>
+                </div>
+                <div id="difficulty-display">PHASE: EASY</div>
+            </div>
+
+            <canvas id="gameCanvas"></canvas>
+            
+            <div id="game-over-screen">
+                <h1>GAME OVER</h1>
+                <button class="btn-restart" onclick="resetGame()">RETRY</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="device-controls">
+        <div class="left-controls">
+            <button class="dpad-btn" id="btn-left">◀</button>
+            <button class="dpad-btn" id="btn-right">▶</button>
+        </div>
+     
+        <div class="right-controls">
+            <button class="action-btn" id="btn-up">▲<span>JUMP</span></button>
+            <button class="action-btn" id="btn-shoot">B<span>SHOOT</span></button>
+            <button class="action-btn" id="btn-down">▼<span>SIT</span></button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
